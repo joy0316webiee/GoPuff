@@ -1,0 +1,262 @@
+/* COMMON STYLE */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+* {
+  box-sizing: border-box;
+}
+
+/* div {
+  border: 1px solid #ddd;
+}  */
+
+h1, h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 43px;
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+strong {
+  font-weight: 400;
+}
+
+body {
+  margin: 0 auto;
+  background: #edeef0;
+  /* overflow-x: hidden; */
+  color: #111;
+  /* border: 1px solid black; */
+  font-weight: 300;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+#wrapper {
+  padding: 20px 50px 20px 50px;
+}
+
+#header {
+  padding: 10px;
+}
+
+#content {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+}
+
+#content .preview {
+  flex: 1;
+  padding: 50px 10px 50px 10px;
+}
+
+#content .preview img {
+  width: 300px;
+  padding: 0px 10px 0px 10px;
+}
+
+#content .signin {
+  flex: 1;
+}
+
+#content .signin-head {
+  font-size: 25px;
+}
+
+#content .signin-body {
+  font-size: 20px;
+  padding: 50px 70px 50px 70px;
+}
+
+#content .signin-form {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+#content .signin-form input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+#content .form-control {
+  margin-bottom: 15px;
+}
+
+#content .signin-form .remember {
+  text-align: left;
+  margin: 10px 0px 20px 0px;
+}
+
+/* The container */
+#content .checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+#content .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+#content .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;  
+  border: 2px solid #aaa;
+}
+
+/* On mouse-over, add a grey background color */
+#content .checkbox:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+/* When the checkbox is checked, add a blue background */
+#content .checkbox input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#content .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#content .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#content .checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#content .btn-landing {
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#content .btn-signup {
+  background: #4f81e9;
+  margin-bottom: 20px;
+}
+
+#content .btn-signup:hover {
+  color: #4f81e9;
+  font-weight: 400;
+  border: 2px solid #4f81e9;
+  background-color: transparent;
+}
+
+@media (min-width: 1600px) {
+  body {
+    width: 1600px;
+  }
+}
+
+@media (max-width: 1390px) {
+  h1 {
+    font-size: 34px;
+  }
+  #content .preview img {
+    width: 239px;
+    margin-bottom: 30px;
+  }
+  #content .signin-head {
+    font-size: 20px;
+  }
+  #content .signin-body {
+    font-size: 17px;
+    padding: 10px 20px 10px 20px;
+  }
+  #content .signin-form input {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 984px) {
+  #content {
+    display: inherit;
+  }
+}
+
+@media (max-width: 984px) {
+  #wrapper {
+    padding: 20px 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    line-height: 7px;
+  }
+  #content {
+    padding: 10px;
+  }
+  #content .preview {
+    padding: 5px;
+  }
+  #content .preview img {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  #content .signin-head {
+    font-size: 16px;
+  }
+  #content .signin-body {
+    margin-top: 50px;
+    font-size: 17px;
+    padding: 5px;
+  }
+  #content .signin-form {
+    padding: 15px;
+  }
+  #content .form-control {
+    margin-bottom: 10px;
+  }
+  #content .signin {
+    margin-bottom: 100px;
+  }
+  #content .btn-landing {
+    width: 90%;
+  }
+}
